@@ -1,0 +1,94 @@
+/* IMPOSTAZIONI GENERALI */
+body {
+
+    color: #000;
+    font-size: 1em;
+    font-family: 'Fira Sans', sans-serif;
+    line-height: 1.8;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+button {
+    font-size: 1.9rem;
+    color: white;
+    background: linear-gradient(35deg, #6cc1e2, #392f7a);
+}
+
+/* HEADER */
+.begin {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 2em;
+
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+ul a, a {
+    text-decoration: none;
+    color: white;
+    padding: 1em;
+}
+
+ul a {
+    color: rgb(121, 121, 121);
+}
+
+#register {
+    color: white;
+}
+
+
+.header {
+    color: white;
+    text-align: left;
+    background-image: url(../images/banner.jpg);
+    background-position: 70%;
+    background-size: cover;
+    object-fit: cover;
+    object-position: 100% 0;
+    background-repeat: no-repeat;
+    padding: 2em 3em;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black, 1px 1px black;
+    margin-left: 0;
+}
+
+.header button {
+    font-size: 17px;
+    padding: 0.5em;
+    border: 2px solid black;
+}
+
+
+header {
+    margin-top: 2em;
+}
+
+
+h1 {
+    font-size: 3.5rem
+}
+
+/* MAIN */
+h2 {
+    font-size: 3em;
+}
+
+
+section {
+    color: #0c0633;
+    color: white;
+}
+
+/* FOOTER */
+i {
+    color: #e42424;
+}
+/* RESPONSIVE */
