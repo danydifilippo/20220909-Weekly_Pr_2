@@ -1,7 +1,5 @@
 /* IMPOSTAZIONI GENERALI */
 
-/* ho inserito delle immagini al posto di alcune icone in quanto le stesse sono a pagamento su awesomefont */
-
 body {
 
     color: #000;
@@ -119,6 +117,7 @@ h2 {
     flex-direction: row;
     justify-content: center;
     margin: 0 2em;
+    margin-bottom: 4em;
 }
 
 .sezione_3 h3 {
@@ -209,3 +208,98 @@ address {
     font-size: 0.7em;
 }
 /* RESPONSIVE */
+
+@media screen and (min-width: 320px) {
+ 
+    .begin {
+        height: 1.7em;
+    }
+    nav i{
+        position: relative;
+    }
+    nav i:hover {
+        cursor: pointer;
+    }
+    nav ul{
+        position: absolute;
+        display: block;
+        top: 8%;
+        background-color: white;
+        font-size: medium;
+        right: 0;
+        border: 1px solid #e42424;
+        border-bottom: none;
+        visibility: hidden;
+    }
+    nav ul li {
+        width: 200px;
+        border-bottom: 1px solid gray;
+    }
+    nav:hover ul {
+        visibility: visible;
+    }
+
+    .sezione_3 {
+        flex-direction: column;
+    }
+    aside {
+        flex-direction: column;
+    }
+    #footer {
+        flex-direction: column;
+        width: 20%;
+    }
+    h1, h2 {
+        font-size: 1.7em;
+        line-height: normal;
+        margin-bottom: 1em;
+     
+    }
+
+    .header, .sezione_2, .sezione_3 div {
+        padding: 0.7em 0.7em;
+    }
+    
+    .header p {
+        font-size: 0.7em;
+        line-height: 1.7em;
+        padding-bottom: 1em;
+    }
+
+    .sezione_3 {
+        margin: 0;
+    }
+    main {
+        margin: 1em 0.6em;
+    }
+    .sezione_3 h3, h4 {
+        font-size: 1.5em;
+    }
+    p {
+        font-size: 15px;
+    }
+    section {
+        padding: 3em 1em;
+        line-height: 1.6em;
+    }
+    section p {
+        margin-bottom: 1em;
+    }
+    aside {
+        margin: 0;
+        text-align: center;
+    }
+    #pc {
+        width: 90%;
+        height: 90%;
+        align-self: center;
+        margin-top: 1em;
+    }
+#footer {
+        padding: 0;
+        display: block;
+    }
+    #footer div {
+        width: 15em;
+    }
+
