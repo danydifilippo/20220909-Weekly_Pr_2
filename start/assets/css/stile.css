@@ -23,7 +23,7 @@ button {
     flex-direction: row;
     justify-content: space-around;
     margin-bottom: 2em;
-
+    box-shadow: 0 9px 14px #d3d3d3;
 }
 
 
@@ -60,7 +60,6 @@ ul a {
     padding: 2em 3em;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black, 1px 1px black;
     margin-left: 0;
-    box-shadow: 10px 10px 40px gray inset;
 }
 
 .header button, .begin button, .btn_white {
@@ -189,11 +188,15 @@ footer h3, footer h4, #icon p {
 }
 
 #reg input, #reg button {
-    width: -webkit-fill-available;
+    width: 100%;
 }
 
 #reg input {
     height: 2em;
+}
+
+#reg {
+    overflow: hidden;
 }
 i {
     color: #e42424;
@@ -208,11 +211,15 @@ address {
     font-size: 0.7em;
 }
 
-   /* chi siamo */
 
+/* CHI SIAMO */
+
+   #head_cs {
+    padding-bottom: 5%;
+    margin-bottom: 0;
+   }
 
    #page_cs {
-    box-shadow: 0 9px 14px -14px rgb(121, 121, 121) inset;
     margin: 0 auto;
     padding-left: 1em;
     padding-right: 1em;
@@ -252,6 +259,52 @@ table tbody {
 }
 #tab_2 {
     display: none;
+}
+
+/* CONTATTI */
+
+#pg_cont {
+    padding: 2em 0.5em;
+}
+
+#pg_cont h1 {
+    font-size: 50px;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+#form input {
+    color: #959595;
+    padding: 12px;
+    font-style: italic;
+    border: 0.5px solid #959595 ;
+}
+
+#form #message {
+    padding-bottom: 4em;
+}
+
+#form button {
+    width: fit-content;
+    align-self: center;
+    font-size: 1em;
+    padding: 10px 15px;
+}
+
+#indirizzo {
+    margin-top: 2em;
+    width: 100%;
+}
+#indirizzo h2 {
+    font-size: 30px;
+}
+#indirizzo p {
+    font-size: 18px;
 }
 
 /* RESPONSIVE */
@@ -453,12 +506,41 @@ table tbody {
         font-size: 1em;
     }
 
+        /* CONTATTI */
+
+#pg_cont {
+    padding: 4em 2em;
+}
+
+#sec_cont {
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+}
+
+#form {
+    width: 50%;
+}
+
+#form input, #form button {
+    font-size: large;
+}
+
+#indirizzo {
+    width: 50%;
+    margin-top: 0;
+}
+
+    }
+
     @media screen and (min-width: 1024px) {
         #page_cs {
             padding-left: 9em;
             padding-right: 9em;
         }
-        
+        #form #indirizzo{
+            width: 30%;
+        }
     }
 
 
